@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-auto">
+    <h2 class="welcome-text">Welcome, {{name}}!</h2>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3 class="welcome-text">Create a New Review:</h3>
+
+    <form class="form new-review-form">
+      <div class="form-group">
+        <label for="review-name">Review title:</label><br>
+        <input class="form-input" type="text" id="review-name" name="review-name" />
+      </div>
+      <div class="form-group">
+        <label for="review-desc">Description:</label><br>
+        <textarea class="form-input" id="review-desc" name="review-desc"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if reviews.length}}
+  <div class="col-md-6 review-list">
+    <h3 class="welcome-text">Current Reviews:</h3>
+
+    {{#each reviews as |review|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/post/{{review.id}}">{{review.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{review.id}}">delete</button>
+        <a href="/dashboard/edit/{{review.id}}"><button class="btn btn-sm btn-success">edit</button></a>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="./js/dashboard.js"></script>
