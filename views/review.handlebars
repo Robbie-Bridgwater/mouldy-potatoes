@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-8 p-3 bg-light text-dark">
+    <h2>{{name}}</h2>
+
+    <div class="row">
+      <div class="col-md-8">
+        <p class="text-dark">{{description}}</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8 bg-secondary">
+    <p class="pt-2 text-right text-white">posted by {{user.name}} on {{format_date date_created}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class=" col-md-8 bg-secondary">
+    <p>Comments will appear below: </p>
+    {{> comments comments}}
+    
+  </div>
+</div>
+
+<br>
+{{#if logged_in}}
+<form class="row comment-form">
+  <div class="form-group p-2 col-md-8 bg-secondary">
+    <textarea rows="3" cols="50" class="form-input" id="comment-text" name="comment-text"></textarea><br>
+    <button type="submit" class="btn btn-dark">Add Comment</button>
+  </div>
+</form>
+{{/if}}
+
+<script src="/js/comment.js"></script>
