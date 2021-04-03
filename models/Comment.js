@@ -19,7 +19,7 @@ Comment.init(
         key: "id",
       },
     },
-    post_id: {
+    review_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
