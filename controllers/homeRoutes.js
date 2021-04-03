@@ -82,6 +82,21 @@ router.get('/dashboard', withAuth, async (req, res) => {
   }
 });
 
+router.get('/dashboard/edit/:id', async (req, res) => {
+  try {
+    const reviewData = await Review.findByPk(req.params.id);
+
+    const review = reviewData.get({ plain: true });
+
+    res.render('edit', {
+      ...review,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
