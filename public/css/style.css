@@ -1,0 +1,16 @@
+/* styling for footer across all 3 pages */
+.footer-span {
+  color: white;
+}
+
+footer {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.welcome-text {
+  font-family: "Anton", sans-serif;
+}
