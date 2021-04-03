@@ -129,7 +129,7 @@ router.put('/dashboard/edit/:id', withAuth, async (req, res) => {
       });
 
     if (!postData) {
-      res.status(404).json({ message: 'No blog found with this id!' });
+      res.status(404).json({ message: 'No review found with this id!' });
       return;
     }
 
