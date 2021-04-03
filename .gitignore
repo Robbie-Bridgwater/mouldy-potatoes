@@ -1,1 +1,3 @@
-/mouldy_potatoes_db
+node_modules
+.env
+.DS_Store
