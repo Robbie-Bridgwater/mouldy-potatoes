@@ -30,5 +30,35 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/review/:id', async (req, res) => {
+  try {
+    const reviewData = await Post.findByPk(req.params.id,
+
+      {
+        include: [
+          {
+            model: Comment,
+            include: [User],
+          },
+          {
+            model: User,
+            attributes: ['name'],
+          },
+        ],
+      });
+
+    const review = reviewData.get({ plain: true });
+    console.log(review)
+
+    res.render('review', {
+      ...review,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    console.log(err)
+    res.status(500).json(err);
+  }
+});
+
 
 module.exports = router;
