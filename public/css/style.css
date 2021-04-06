@@ -31,3 +31,8 @@ footer {
 .navbar-brand {
   padding-left: 15px;
 }
+
+#nav-menu{
+  padding-left: 15px;
+  padding-right: 15px;
+}
