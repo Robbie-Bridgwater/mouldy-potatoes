@@ -18,3 +18,7 @@ footer {
 .theme-palette {
  background-color: #FFC482;
 }
+
+.form-input{
+  width: 100%
+}
