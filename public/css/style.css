@@ -14,3 +14,14 @@ footer {
 .welcome-text {
   font-family: "Anton", sans-serif;
 }
+
+/* change the whole image used as the star. Make sure to set starSize in options if not 16px.
+first image is for the 'off' mode */
+/* .star-rating {
+  background: url("../assets/img/potatoOff.svg") !important;
+} */
+
+/* add style for 'on' mode */
+/* .star-rating .star-value {
+  background: url("../assets//img/potatoOn.svg") !important;
+} */
