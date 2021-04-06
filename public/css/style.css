@@ -23,7 +23,7 @@ footer {
   width: 100%
 }
 
-.login-btn{
+.login-btn, .signup-btn{
   background-color: #E29578;
   color: white
 }
