@@ -22,3 +22,12 @@ footer {
 .form-input{
   width: 100%
 }
+
+.login-btn{
+  background-color: #E29578;
+  color: white
+}
+
+.navbar-brand {
+  padding-left: 15px;
+}
