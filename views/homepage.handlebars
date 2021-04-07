@@ -1,13 +1,20 @@
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
-{{#each reviews as |review| }}
-  <div class="card grid-item" style="width: 18rem;">
+<div
+  class="grid"
+  data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'
+>
+  {{#each reviews as |review| }}
+  <div class="card grid-item" style="width: 18rem">
     <div class="card-body">
-      <h5 class="card-title titles"><a href="/review/{{review.id}}">{{review.name}}</a></h5>
+      <h5 class="card-title titles">
+        <a href="/review/{{ review.id }}">{{ review.name }}</a>
+      </h5>
       <div class="rater" data-rating="{{ review.rating }}"></div>
-      <h6 class="card-subtitle mb-2 titles">Created by {{review.user.name}} on {{format_date review.date_created}}</h6>
-      <p class="card-text">{{review.description}}</p>
+      <h6 class="card-subtitle mb-2 titles">
+        Created by {{ review.user.name }} on {{format_date review.date_created}}
+      </h6>
+      <p class="card-text">{{ review.description }}</p>
     </div>
   </div>
-{{/each}}
+  {{/each}}
 </div>
 <script src="/js/bundleHomepage.js"></script>
