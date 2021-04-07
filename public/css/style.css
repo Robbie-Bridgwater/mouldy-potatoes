@@ -33,3 +33,26 @@ first image is for the 'off' mode */
   height: 100%;
   background-repeat: repeat-x;
 }
+
+.theme-palette {
+ background-color: #FFC482;
+}
+
+.form-input{
+  width: 100%
+}
+
+.login-btn, .signup-btn{
+  background-color: #E29578;
+  color: white
+}
+
+.navbar-brand {
+  padding-left: 15px;
+}
+
+#nav-menu{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
