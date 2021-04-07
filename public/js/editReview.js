@@ -2,6 +2,7 @@ const editFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('input[name="post-name"]').value;
+  const rating = document.querySelector("#rater").getAttribute("data-rating");
   const description = document.querySelector('input[name="post-desc"]').value;
   const id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
@@ -11,6 +12,7 @@ const editFormHandler = async (event) => {
     method: "PUT",
     body: JSON.stringify({
       name,
+      rating,
       description,
     }),
     headers: {

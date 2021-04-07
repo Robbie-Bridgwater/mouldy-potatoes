@@ -25,6 +25,25 @@ body {
     font-family: 'Franklin Gothic FS Book', 'Franklin Gothic FS Med', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* change the whole image used as the star. Make sure to set starSize in options if not 16px.
+first image is for the 'off' mode */
+.star-rating {
+  background-image: url("../assets/img/potatoOff.svg");
+  width: 0;
+  position: relative;
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+
+/* add style for 'on' mode */
+.star-rating .star-value {
+  background: url("../assets//img/potatoOn.svg");
+  position: absolute;
+  height: 100%;
+  background-repeat: repeat-x;
+}
+
 .theme-palette {
     background-color: #FFC482;
 }
@@ -76,11 +95,20 @@ a.navbar:visited {
     box-sizing: border-box;
 }
 
+.form-input{
+  width: 100%
+}
 
-/* .theme-palette {
-    background-color: #FFC482;
-} */
+.login-btn, .signup-btn{
+  background-color: #E29578;
+  color: white
+}
 
-body {
-    font-family: 'Roboto', sans-serif;
+.navbar-brand {
+  padding-left: 15px;
+}
+
+#nav-menu{
+  padding-left: 15px;
+  padding-right: 15px;
 }

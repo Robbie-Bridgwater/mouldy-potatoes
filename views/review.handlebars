@@ -2,6 +2,7 @@
 <div class="row card">
 <h2 class="titles pinkTxt">{{name}}</h2>
 <p class="pt-2 text-right titles">Posted by {{user.name}} on {{format_date date_created}}</p>
+<div id="rater" data-rating="{{ rating }}"></div>
 <p class="text-dark">{{description}}</p>
 </div>
 
@@ -11,11 +12,10 @@
   <div class=" col-md-8 titles">
     <p>COMMENTS WILL APPEAR BELOW: </p>
     {{> comments comments}}
-    
   </div>
 </div>
 
-<br>
+<br />
 {{#if logged_in}}
 <form class="row comment-form">
   <div class="form-group p-2 col-md-8">
@@ -27,3 +27,5 @@
 </div>
 
 <script src="/js/comment.js"></script>
+
+<script src="/js/bundleReview.js"></script>

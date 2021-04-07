@@ -1,17 +1,38 @@
-  <article class="container">
+<article class="container">
   <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
   <h2 class="title mt-3 titles">EDIT REVIEW</h2><hr>
   <form class="form edit-post-form">
     <div>
-        <label for="post-name">Movie title:</label><br>
-      <input class="input my-2" name="post-name" type="text" value="{{name}}" />
+      <label for="post-name">Movie title:</label><br />
+      <input
+        class="input my-2"
+        name="post-name"
+        type="text"
+        value="{{ name }}"
+      />
     </div>
     <div>
-        <label for="post-desc">Review content:</label><br>
-      <input class="input textarea my-2" name="post-desc" type="text" value="{{description}}" />
+      <label for="post-rating">Rating:</label><br />
+      <div id="rater" data-rating="{{ rating }}"></div>
     </div>
-    <button type="submit" class="btn btn-danger">save review</button>
+    <div>
+      <label for="post-desc">Review content:</label><br />
+      <input
+        class="textarea my-2"
+        name="post-desc"
+        type="text"
+        value="{{ description }}"
+      />
+    </div>
+    <button
+      type="submit"
+      class="btn btn-danger"
+    >
+      save review
+    </button>
   </form>
 </article>
 
 <script src="/js/editReview.js"></script>
+
+<script src="/js/bundleEdit.js"></script>
