@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mouldy Potatoes</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <title>Mouldy Potatoes</title>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Mouldy Potatoes</a>
+
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark theme-palette">
@@ -46,23 +57,19 @@
     </div>
   </nav>
 
-  {{!-- Main content of page --}}
-  <section>
-    <main class="container container-fluid mt-5">
-      {{{ body }}}
-    </main>
-  </section>
+    <br />
+    <br />
 
-  <br>
-  <br>
-
-  {{!-- Footer section --}}
-  <footer class="footer mt-auto theme-palette">
-    <div class="container footer-con text-center">
-      <span class="footer-span">© 2021 All Rights Reserved by Mouldy Potatoes</span>
-      <br>
-    </div>
-  </footer>
+    {{!-- Footer section --}}
+    <footer class="footer mt-auto bg-warning">
+      <div class="container footer-con text-center">
+        <span class="footer-span"
+          >© 2021 All Rights Reserved by Mouldy Potatoes</span
+        >
+        <br />
+      </div>
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
 
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
@@ -76,3 +83,4 @@
 </body>
 
 </html>
+

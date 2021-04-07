@@ -15,6 +15,25 @@ footer {
   font-family: "Anton", sans-serif;
 }
 
+/* change the whole image used as the star. Make sure to set starSize in options if not 16px.
+first image is for the 'off' mode */
+.star-rating {
+  background-image: url("../assets/img/potatoOff.svg");
+  width: 0;
+  position: relative;
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+
+/* add style for 'on' mode */
+.star-rating .star-value {
+  background: url("../assets//img/potatoOn.svg");
+  position: absolute;
+  height: 100%;
+  background-repeat: repeat-x;
+}
+
 .theme-palette {
  background-color: #FFC482;
 }
@@ -36,3 +55,4 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
 }
+

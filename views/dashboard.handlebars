@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-auto">
-    <h2 class="welcome-text">Welcome, {{name}}!</h2>
+    <h2 class="welcome-text">Welcome, {{ name }}!</h2>
   </div>
 </div>
 
@@ -10,12 +10,24 @@
 
     <form class="form new-review-form">
       <div class="form-group">
-        <label for="review-name">Movie title:</label><br>
-        <input class="form-input" type="text" id="review-name" name="review-name" />
+        <label for="review-name">Movie title:</label><br />
+        <input
+          class="form-input"
+          type="text"
+          id="review-name"
+          name="review-name"
+        />
       </div>
+
+      <div id="rater"></div>
+
       <div class="form-group">
-        <label for="review-desc">Review:</label><br>
-        <textarea class="form-input" id="review-desc" name="review-desc"></textarea>
+        <label for="review-desc">Review:</label><br />
+        <textarea
+          class="form-input"
+          id="review-desc"
+          name="review-desc"
+        ></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -30,11 +42,17 @@
     {{#each reviews as |review|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/review/{{review.id}}">{{review.name}}</a></h4>
+        <h4>
+          <a href="/review/{{ review.id }}">{{ review.name }}</a>
+        </h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{review.id}}">delete</button>
-        <a href="/dashboard/edit/{{review.id}}"><button class="btn btn-sm btn-success">edit</button></a>
+        <button class="btn btn-sm btn-danger" data-id="{{ review.id }}">
+          delete
+        </button>
+        <a href="/dashboard/edit/{{ review.id }}"
+          ><button class="btn btn-sm btn-success">edit</button></a
+        >
       </div>
     </div>
     {{/each}}
@@ -43,3 +61,5 @@
 </div>
 
 <script src="./js/dashboard.js"></script>
+
+<script src="/js/bundleEdit.js"></script>
