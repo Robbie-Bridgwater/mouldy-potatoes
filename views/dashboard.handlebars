@@ -37,14 +37,13 @@
 
   {{#if reviews.length}}
   <div class="col-md-6 review-list">
-    <h3 class="titles">CURRENT REVIEWS:</h3>
-
+    <h3 class="titles" id="current-reviews">CURRENT REVIEWS:</h3>
     {{#each reviews as |review|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4>
+        <h5>
           <a href="/review/{{ review.id }}">{{ review.name }}</a>
-        </h4>
+        </h5>
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{review.id}}">delete</button>

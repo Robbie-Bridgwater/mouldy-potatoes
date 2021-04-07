@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark theme-palette container">
+    <nav class="navbar navbar-expand-lg navbar-dark theme-palette">
       <a class="navbar-brand" href="/">MOULDY POTATOES</a>
 
       <button
@@ -44,7 +44,7 @@
           </li>
           {{#if logged_in}}
           <li class="nav-item">
-            <a class="nav-link" href="/dashboard">DASHBOARD</a>
+            <a class="nav-link active" href="/dashboard">DASHBOARD</a>
           </li>
           <li class="nav-item">
             <button
@@ -67,24 +67,22 @@
         </ul>
       </div>
     </nav>
-    <div class="container">
-      {{!-- Main content of page --}}
-      <section>
-        <main class="container container-fluid mt-5">{{{ body }}}</main>
-      </section>
+    {{!-- Main content of page --}}
+    <section>
+      <main class="container container-fluid mt-5">{{{ body }}}</main>
+    </section>
 
-      <br />
-      <br />
-    </div>
+    <br />
+    <br />
     {{!-- Footer section --}}
-    <footer class="footer mt-auto theme-palette container">
+    <footer class="footer mt-auto theme-palette">
       <div class="footer-con text-center">
         <span class="footer-span"
           >© 2021 All Rights Reserved by Mouldy Potatoes</span
         >
         <br />
       </div>
-      <div>
+      <div class="text-center text-white">
         Icons made by
         <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
         <a href="https://www.flaticon.com/" title="Flaticon"
@@ -101,6 +99,13 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
     ></script>
 
     <script src="/js/navbar.js"></script>
