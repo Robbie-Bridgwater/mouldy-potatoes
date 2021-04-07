@@ -1,9 +1,9 @@
-<section class="comments">
+<section class="comments card">
   {{#each this}}
-    <div class="text">
+    <div class="text pinkTxt">
       {{this.user.name}} on {{format_date date_created}}:
     </div>
-    <div class="text">
+    <div class="commentTxt text">
       {{this.comment_text}}
     </div>
   {{/each}}
