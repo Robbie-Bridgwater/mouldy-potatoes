@@ -1,18 +1,28 @@
 /* styling for footer across all 3 pages */
+
 .footer-span {
-  color: white;
+    color: white;
 }
 
 footer {
-  z-index: 1;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 3%;
 }
 
-.welcome-text {
-  font-family: "Anton", sans-serif;
+.container {
+    background-color: white;
+    padding-top: 1%;
+}
+
+body {
+    font-family: 'Franklin Gothic FS Book', 'Franklin Gothic FS Med', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.commentTxt {
+    font-family: 'Franklin Gothic FS Book', 'Franklin Gothic FS Med', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* change the whole image used as the star. Make sure to set starSize in options if not 16px.
@@ -35,7 +45,54 @@ first image is for the 'off' mode */
 }
 
 .theme-palette {
- background-color: #FFC482;
+    background-color: #FFC482;
+}
+
+.pinkbtn {
+    background-color: #fd8f96;
+}
+
+.pinkTxt {
+    color: #fd8f96;
+}
+
+.titles {
+    font-family: 'Neusa Next Pro Compact Medium', Impact, Arial, sans-serif;
+}
+
+.titles-secondary {
+    font-family: 'Franklin Gothic FS Book', 'Franklin Gothic FS Med', 'Arial Narrow', Arial, sans-serif;
+    color: #fd8f96;
+}
+
+.navbar {
+    margin-top: 3%;
+    font-family: 'Neusa Next Pro Compact Medium', Impact, Arial, sans-serif;
+}
+
+a {
+    color: #fd8f96;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.navbar,
+a.navbar:visited {
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.input,
+.form-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .form-input{
@@ -55,4 +112,3 @@ first image is for the 'off' mode */
   padding-left: 15px;
   padding-right: 15px;
 }
-

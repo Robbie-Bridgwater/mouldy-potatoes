@@ -1,22 +1,13 @@
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
 {{#each reviews as |review| }}
-<div class="row review">
-  <div class="col-md-10 bg-light text-dark">
-    <h2>
-      <a href="/review/{{ review.id }}">{{ review.name }}</a>
-    </h2>
-    <div class="rater" data-rating="{{ review.rating }}"></div>
-    <p>
-      {{ review.description }}
-    </p>
+  <div class="card grid-item" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title titles"><a href="/review/{{review.id}}">{{review.name}}</a></h5>
+      <div class="rater" data-rating="{{ review.rating }}"></div>
+      <h6 class="card-subtitle mb-2 titles">Created by {{review.user.name}} on {{format_date review.date_created}}</h6>
+      <p class="card-text">{{review.description}}</p>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-10">
-    <p class="bg-secondary text-white">
-      Created by {{ review.user.name }} on {{format_date review.date_created}}
-    </p>
-  </div>
-</div>
 {{/each}}
-
+</div>
 <script src="/js/bundleHomepage.js"></script>
