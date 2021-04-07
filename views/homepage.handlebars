@@ -1,11 +1,11 @@
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
 {{#each reviews as |review| }}
-<div class="row data-masonry='{"percentPosition": true }'">
-  <div class="card" style="width: 18rem;">
+  <div class="card grid-item" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title"><a href="/review/{{review.id}}">{{review.name}}</a></h5>
       <h6 class="card-subtitle mb-2 text-muted">Created by {{review.user.name}} on {{format_date review.date_created}}</h6>
       <p class="card-text">{{review.description}}</p>
     </div>
   </div>
-</div>
 {{/each}}
+</div>
