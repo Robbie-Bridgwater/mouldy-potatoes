@@ -122,6 +122,7 @@ router.put("/dashboard/edit/:id", withAuth, async (req, res) => {
     const reviewData = await Review.update(
       {
         name: req.body.name,
+        rating: req.body.rating,
         description: req.body.description,
       },
       {
@@ -133,7 +134,7 @@ router.put("/dashboard/edit/:id", withAuth, async (req, res) => {
     );
 
     if (!reviewData) {
-      res.status(404).json({ message: "No blog found with this id!" });
+      res.status(404).json({ message: "No review found with this id!" });
       return;
     }
 

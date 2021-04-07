@@ -2,16 +2,21 @@
 <div class="row review">
   <div class="col-md-10 bg-light text-dark">
     <h2>
-      <a href="/review/{{review.id}}">{{review.name}}</a>
+      <a href="/review/{{ review.id }}">{{ review.name }}</a>
     </h2>
+    <div id="rater" data-rating="{{ review.rating }}"></div>
     <p>
-      {{review.description}}
+      {{ review.description }}
     </p>
   </div>
 </div>
 <div class="row">
   <div class="col-md-10">
-    <p class="bg-secondary text-white">Created by {{review.user.name}} on {{format_date review.date_created}}</p>
+    <p class="bg-secondary text-white">
+      Created by {{ review.user.name }} on {{format_date review.date_created}}
+    </p>
   </div>
 </div>
 {{/each}}
+
+<script src="/js/bundleReadOnly.js"></script>

@@ -1,17 +1,43 @@
-  <article class="p-2"style="background-color: #FFFFCC; border: solid 1px; border-radius: 0.2rem">
+<article
+  class="p-2"
+  style="background-color: #ffffcc; border: solid 1px; border-radius: 0.2rem"
+>
   <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
-  <h2 class="title mt-3">Edit review</h2><hr>
+  <h2 class="title mt-3">Edit review</h2>
+  <hr />
   <form class="form edit-post-form">
     <div>
-        <label for="post-name">Movie title:</label><br>
-      <input class="input my-2" name="post-name" type="text" value="{{name}}" />
+      <label for="post-name">Movie title:</label><br />
+      <input
+        class="input my-2"
+        name="post-name"
+        type="text"
+        value="{{ name }}"
+      />
     </div>
     <div>
-        <label for="post-desc">Review content:</label><br>
-      <input class="textarea my-2" name="post-desc" type="text" value="{{description}}" />
+      <label for="post-rating">Rating:</label><br />
+      <div id="rater" data-rating="{{ rating }}"></div>
     </div>
-    <button type="submit" class="button btn-success" style="border-radius: 0.2rem;">save review</button>
+    <div>
+      <label for="post-desc">Review content:</label><br />
+      <input
+        class="textarea my-2"
+        name="post-desc"
+        type="text"
+        value="{{ description }}"
+      />
+    </div>
+    <button
+      type="submit"
+      class="button btn-success"
+      style="border-radius: 0.2rem"
+    >
+      save review
+    </button>
   </form>
 </article>
 
 <script src="/js/editReview.js"></script>
+
+<script src="/js/bundleEdit.js"></script>

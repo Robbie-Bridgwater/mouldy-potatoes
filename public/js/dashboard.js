@@ -2,12 +2,13 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector("#review-name").value.trim();
+  const rating = document.querySelector("#rater").getAttribute("data-rating");
   const description = document.querySelector("#review-desc").value.trim();
 
-  if (name && description) {
+  if (name && rating && description) {
     const response = await fetch(`/api/reviews`, {
       method: "POST",
-      body: JSON.stringify({ name, description }),
+      body: JSON.stringify({ name, rating, description }),
       headers: {
         "Content-Type": "application/json",
       },

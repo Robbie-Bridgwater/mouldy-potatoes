@@ -14,6 +14,10 @@ Review.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    rating: {
+      type: DataTypes.DOUBLE,
+      allowNull: false,
+    },
     description: {
       type: DataTypes.STRING,
     },
