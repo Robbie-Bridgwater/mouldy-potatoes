@@ -1,7 +1,54 @@
-/* styling for footer across all 3 pages */
+:root {
+  /* colors */
+  --primary-color: #ffc482;
+  --secondary-color: #e29578;
+  --bg-color: #fd8f96;
+}
 
-.footer-span {
-  color: white;
+/* potato off mode */
+.star-rating {
+  background-image: url("../assets/img/potatoOff.svg");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  display: inline-block;
+  position: relative;
+  width: 0;
+}
+
+/* potato on mode */
+.star-rating .star-value {
+  background: url("../assets//img/potatoOn.svg");
+  background-repeat: repeat-x;
+  height: 100%;
+  position: absolute;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  font-family: "Neusa Next Pro Compact Medium", Impact, Arial, sans-serif;
+}
+
+.navbar,
+a.navbar:visited {
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.navbar-brand {
+  padding-left: 15px;
+  font-size: 30px;
+}
+
+#nav-menu {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-item {
+  font-size: 25px;
 }
 
 footer {
@@ -12,44 +59,21 @@ footer {
   left: 0;
 }
 
+.footer-span {
+  color: white;
+}
+
 .container {
   background-color: white;
   padding-top: 1%;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-/* change the whole image used as the star. Make sure to set starSize in options if not 16px.
-first image is for the 'off' mode */
-.star-rating {
-  background-image: url("../assets/img/potatoOff.svg");
-  background-position: 0 0;
-  background-repeat: repeat-x;
-  display: inline-block;
-  position: relative;
-  width: 0;
-}
-
-/* add style for 'on' mode */
-.star-rating .star-value {
-  background: url("../assets//img/potatoOn.svg");
-  background-repeat: repeat-x;
-  height: 100%;
-  position: absolute;
-}
-
 .theme-palette {
-  background-color: #ffc482;
-}
-
-.pinkbtn {
-  background-color: #fd8f96;
+  background-color: var(--primary-color);
 }
 
 .pinkTxt {
-  color: #fd8f96;
+  color: var(--secondary-color);
 }
 
 .titles {
@@ -57,25 +81,19 @@ first image is for the 'off' mode */
 }
 
 .titles-secondary {
-  color: #fd8f96;
-}
-
-.navbar {
-  font-family: "Neusa Next Pro Compact Medium", Impact, Arial, sans-serif;
+  color: var(--secondary-color);
 }
 
 a {
-  color: #fd8f96;
+  color: var(--secondary-color);
 }
 
 a:hover {
   color: hotpink;
 }
 
-.navbar,
-a.navbar:visited {
-  color: #fff;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+label {
+  font-size: 20px;
 }
 
 .input,
@@ -95,27 +113,19 @@ a.navbar:visited {
 
 .login-btn,
 .signup-btn {
-  background-color: #e29578;
+  background-color: var(--secondary-color);
   color: white;
-}
-
-.navbar-brand {
-  padding-left: 15px;
-}
-
-#nav-menu {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 #rater {
   padding-left: 0;
 }
 
-label {
-  font-size: 20px;
-}
-
 #current-reviews {
   padding-bottom: 7px;
+}
+
+.btn-salmon {
+  background-color: var(--secondary-color);
+  color: white;
 }
