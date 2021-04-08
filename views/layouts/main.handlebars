@@ -21,7 +21,9 @@
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark theme-palette">
-      <a class="navbar-brand" href="/">MOULDY POTATOES</a>
+      <a class="navbar-brand" href="/"
+        >MOULDY POTATOES <i id="potato-icon"></i>
+      </a>
 
       <button
         class="navbar-toggler"
@@ -47,9 +49,9 @@
             <a class="nav-link active" href="/dashboard">DASHBOARD</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-salmon" id="logout" href="/logout">
+            <a class="nav-link active" id="logout" href="javascript:logout()">
               LOGOUT
-            </button>
+            </a>
           </li>
           {{else}}
           <li class="nav-item">
