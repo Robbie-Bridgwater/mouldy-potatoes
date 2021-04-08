@@ -1,18 +1,21 @@
 <div class="container">
-  <div class="row card">
-    <h2 class="titles pinkTxt">{{ name }}</h2>
-    <div id="rater" data-rating="{{ rating }}"></div>
-    <p class="text-dark">{{ description }}</p>
-    <h6 class="pt-2 text-right titles">
-      Posted by {{ user.name }} on {{format_date date_created}}
-    </h6>
+  <div class="row">
+    <div class="col-md-8 card">
+      <h2 class="titles pinkTxt">{{ name }}</h2>
+      <div id="rater" data-rating="{{ rating }}"></div>
+      <br />
+      <p class="text-dark">{{ description }}</p>
+      <h6 class="pt-2 text-right titles">
+        Posted by {{ user.name }} on {{format_date date_created}}
+      </h6>
+    </div>
   </div>
 
   <br />
 
-  <div class="row card">
-    <div class="col-md-8 titles">
-      <p>COMMENTS:</p>
+  <div class="row">
+    <div class="col-md-8 titles card">
+      <h4>Comments:</h4>
       {{> comments comments}}
     </div>
   </div>
