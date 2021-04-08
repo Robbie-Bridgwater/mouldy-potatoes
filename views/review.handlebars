@@ -10,13 +10,15 @@
 
   <br />
 
-  <div class="row">
+  <div class="row card">
     <div class="col-md-8 titles">
       <p>COMMENTS:</p>
       {{> comments comments}}
     </div>
   </div>
+
   <br />
+
   {{#if logged_in}}
   <form class="row comment-form">
     <div class="form-group p-2 col-md-8">
@@ -26,8 +28,8 @@
         class="form-input"
         id="comment-text"
         name="comment-text"
-      ></textarea
-      ><br />
+      ></textarea>
+      <br />
       <button type="submit" class="btn btn-salmon">Add Comment</button>
     </div>
   </form>
