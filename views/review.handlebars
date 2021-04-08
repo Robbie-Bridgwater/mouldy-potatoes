@@ -1,22 +1,27 @@
 <div class="container">
-  <div class="row card">
-    <h2 class="titles pinkTxt">{{ name }}</h2>
-    <div id="rater" data-rating="{{ rating }}"></div>
-    <p class="text-dark">{{ description }}</p>
-    <h6 class="pt-2 text-right titles">
-      Posted by {{ user.name }} on {{format_date date_created}}
-    </h6>
+  <div class="row">
+    <div class="col-md-8 card">
+      <h2 class="titles pinkTxt">{{ name }}</h2>
+      <div id="rater" data-rating="{{ rating }}"></div>
+      <br />
+      <p class="text-dark">{{ description }}</p>
+      <h6 class="pt-2 text-right titles">
+        Posted by {{ user.name }} on {{format_date date_created}}
+      </h6>
+    </div>
   </div>
 
   <br />
 
   <div class="row">
-    <div class="col-md-8 titles">
-      <p>COMMENTS:</p>
+    <div class="col-md-8 titles card">
+      <h4>Comments:</h4>
       {{> comments comments}}
     </div>
   </div>
+
   <br />
+
   {{#if logged_in}}
   <form class="row comment-form">
     <div class="form-group p-2 col-md-8">
@@ -26,8 +31,8 @@
         class="form-input"
         id="comment-text"
         name="comment-text"
-      ></textarea
-      ><br />
+      ></textarea>
+      <br />
       <button type="submit" class="btn btn-salmon">Add Comment</button>
     </div>
   </form>

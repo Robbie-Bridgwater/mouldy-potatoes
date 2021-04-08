@@ -1,10 +1,10 @@
-<section class="comments card">
+<section class="comments">
   {{#each this}}
-    <div class="text pinkTxt">
-      {{this.user.name}} on {{format_date date_created}}:
-    </div>
-    <div class="commentTxt text">
-      {{this.comment_text}}
-    </div>
+  <div class="text pinkTxt">
+    {{ this.user.name }} on {{format_date date_created}}:
+  </div>
+  <div class="commentTxt text">
+    {{ this.comment_text }}
+  </div>
   {{/each}}
 </section>
