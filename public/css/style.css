@@ -2,7 +2,8 @@
   /* colors */
   --primary-color: #ffc482;
   --secondary-color: #e29578;
-  --bg-color: #fd8f96;
+  --tertiary-color: hotpink;
+  --form-border-color: #ccc;
 }
 
 /* potato off mode */
@@ -33,21 +34,21 @@ body {
 
 #potato-icon {
   background: url(../assets/img/potatoOn.svg);
+  background-size: contain;
+  display: inline-block;
   height: 2.5rem;
   width: 2.5rem;
-  display: inline-block;
-  background-size: contain;
 }
 
 .navbar,
 a.navbar:visited {
-  color: #fff;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  color: white;
+  text-shadow: 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
 }
 
 .navbar-brand {
-  padding-left: 15px;
   font-size: 30px;
+  padding-left: 15px;
 }
 
 #nav-menu {
@@ -61,10 +62,10 @@ a.navbar:visited {
 
 footer {
   bottom: 0;
+  left: 0;
+  position: fixed;
   width: 100%;
   z-index: 1;
-  position: fixed;
-  left: 0;
 }
 
 .footer-span {
@@ -97,7 +98,7 @@ a {
 }
 
 a:hover {
-  color: hotpink;
+  color: var(--tertiary-color);
 }
 
 label {
@@ -106,7 +107,7 @@ label {
 
 .input,
 .form-input {
-  border: 1px solid #ccc;
+  border: 1px solid var(--form-border-color);
   border-radius: 4px;
   box-sizing: border-box;
   display: inline-block;
