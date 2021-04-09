@@ -12,8 +12,11 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const sess = {
   secret: "Secret Secret",
-  cookie: {},
+  cookie: {
+    maxAge: 172800000
+  },
   resave: false,
+  rolling: true,
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize,
