@@ -2,7 +2,7 @@
 Mouldy Potates is a CMS-style review site similar to Wordpress site, where users can publish their review of any movie and comment on other users’ reviews as well.
 
 # Link to deployed app
-[Mouldy Potatoes]()
+[Mouldy Potatoes](https://mouldy-potatoes.herokuapp.com/)
 
 ## Screenshots
 
@@ -25,9 +25,9 @@ Mouldy Potates is a CMS-style review site similar to Wordpress site, where users
 * CSS
 
 ## Installation
-You will not need to install any packages for this app if you a visiting the deployed link
+You will not need to install any packages for this app if you are visiting the deployed app.
 
-However, if you wish to use try the app on your localhost, you will need to follow the following instructions:
+However, if you wish to use try the app on your local device, you will need to follow the following instructions:
 Run `npm init -y` to initialise the `package.json ` and then install the following list of dependencies:
 
 * `npm i mysql2`
@@ -49,7 +49,6 @@ Once all the dependencies are installed, you can initialise the application itse
 
 ## Usage 
 
-If all requests are successfully made, you will see posts and comments added and a status '200 OK'. A '404' or '400' status will show up if there is an error or bad request made
 
 ## Test
 We do not have any test packages for this app but always check the error messages within terminals and debug using console.log(s). 
@@ -66,7 +65,7 @@ We do not have any test packages for this app but always check the error message
  - Ben Pauley
  - Gurvinder Dehl
  - Karen Opoku
- - Robbie Bridgewater
+ - Robbie Bridgwater
 
 
 ## Questions?
