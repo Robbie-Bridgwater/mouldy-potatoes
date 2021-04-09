@@ -42,6 +42,7 @@ document
   .querySelector(".new-review-form")
   .addEventListener("submit", newFormHandler);
 
-document
-  .querySelector(".review-list")
-  .addEventListener("click", delButtonHandler);
+  let reviewList = document.querySelector(".review-list");
+  if (reviewList !== null) {
+    reviewList.addEventListener("click", delButtonHandler);
+  }

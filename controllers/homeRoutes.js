@@ -25,7 +25,6 @@ router.get("/", async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
-    console.log(err);
     res.status(500).json(err);
   }
 });
@@ -34,7 +33,6 @@ router.get("/review/:id", async (req, res) => {
   try {
     const reviewData = await Review.findByPk(
       req.params.id,
-
       {
         include: [
           {
@@ -50,14 +48,11 @@ router.get("/review/:id", async (req, res) => {
     );
 
     const review = reviewData.get({ plain: true });
-    console.log(review);
-
     res.render("review", {
       ...review,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
-    console.log(err);
     res.status(500).json(err);
   }
 });
