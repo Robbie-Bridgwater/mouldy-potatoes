@@ -16,6 +16,7 @@ Mouldy Potates is a CMS-style review site similar to Wordpress site, where users
 ![image]()
 
 ## Technology
+* Node js
 * XAMPP / MySQL
 * MySQl workbench
 * Javascript
@@ -24,7 +25,7 @@ Mouldy Potates is a CMS-style review site similar to Wordpress site, where users
 * HTML
 * CSS
 
-## Installation
+## Usage/Installation
 You will not need to install any packages for this app if you are visiting the deployed app.
 
 However, if you wish to use try the app on your local device, you will need to follow the following instructions:
@@ -47,9 +48,6 @@ The mysql2 package connects you directly to the database created in the MySQL Wo
 
 Once all the dependencies are installed, you can initialise the application itself by running `node server.js` in the command line
 
-## Usage 
-
-
 ## Test
 We do not have any test packages for this app but always check the error messages within terminals and debug using console.log(s). 
 
@@ -62,10 +60,10 @@ We do not have any test packages for this app but always check the error message
 
 ## Contributors
 
- - Ben Pauley
- - Gurvinder Dehl
- - Karen Opoku
- - Robbie Bridgwater
+ - [Ben Pauley](https://github.com/ben-pauley)
+ - [Gurvinder Dehl](https://github.com/gurvinderdehl)
+ - [Karen Opoku](https://github.com/Karen-O94)
+ - [Robbie Bridgwater](https://github.com/Robbie-Bridgwater)
 
 
 ## Questions?
