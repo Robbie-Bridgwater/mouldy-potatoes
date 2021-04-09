@@ -1,140 +1,147 @@
 :root {
-  /* colors */
-  --primary-color: #ffc482;
-  --secondary-color: #e29578;
-  --tertiary-color: hotpink;
-  --form-border-color: #ccc;
+    /* colors */
+    --primary-color: #ffc482;
+    --secondary-color: #e29578;
+    --tertiary-color: hotpink;
+    --form-border-color: #ccc;
 }
+
 
 /* potato off mode */
+
 .star-rating {
-  background-image: url("../assets/img/potatoOff.svg");
-  background-position: 0 0;
-  background-repeat: repeat-x;
-  display: inline-block;
-  position: relative;
-  width: 0;
+    background-image: url("../assets/img/potatoOff.svg");
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    display: inline-block;
+    position: relative;
+    width: 0;
 }
 
+
 /* potato on mode */
+
 .star-rating .star-value {
-  background: url("../assets//img/potatoOn.svg");
-  background-repeat: repeat-x;
-  height: 100%;
-  position: absolute;
+    background: url("../assets//img/potatoOn.svg");
+    background-repeat: repeat-x;
+    height: 100%;
+    position: absolute;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .navbar {
-  font-family: "Neusa Next Pro Compact Medium", Impact, Arial, sans-serif;
+    font-family: "Neusa Next Pro Compact Medium", Impact, Arial, sans-serif;
 }
 
 #potato-icon {
-  background: url(../assets/img/potatoOn.svg);
-  background-size: contain;
-  display: inline-block;
-  height: 2.5rem;
-  position: relative;
-  top: 8px;
-  width: 2.5rem;
+    background: url(../assets/img/potatoOn.svg);
+    background-size: contain;
+    display: inline-block;
+    height: 2.5rem;
+    position: relative;
+    top: 8px;
+    width: 2.5rem;
 }
 
 .navbar,
 a.navbar:visited {
-  color: white;
-  text-shadow: 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
+    color: white;
+    text-shadow: 1px 0 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black;
 }
 
 .navbar-brand {
-  font-size: 30px;
-  padding-left: 15px;
+    font-size: 30px;
+    padding-left: 15px;
 }
 
 #nav-menu {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nav-item {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 footer {
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+    margin-top: 15px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .footer-span {
-  color: white;
+    color: white;
 }
 
 .container {
-  background-color: white;
-  padding-top: 1%;
+    background-color: white;
+    padding-top: 1%;
 }
 
 .theme-palette {
-  background-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
-.pinkTxt, .titles-secondary, a {
-  color: var(--secondary-color);
+.pinkTxt,
+.titles-secondary,
+a {
+    color: var(--secondary-color);
 }
 
 .titles {
-  font-family: "Neusa Next Pro Compact Medium", Impact, Arial, sans-serif;
+    font-family: "Neusa Next Pro Compact Medium", Impact, Arial, sans-serif;
 }
 
 a:hover {
-  color: var(--tertiary-color);
+    color: var(--tertiary-color);
 }
 
 label {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .input,
 .form-input {
-  border: 1px solid var(--form-border-color);
-  border-radius: 4px;
-  box-sizing: border-box;
-  display: inline-block;
-  margin: 8px 0;
-  padding: 12px 20px;
-  width: 100%;
+    border: 1px solid var(--form-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 100%;
 }
 
 .form-input {
-  font-size: 16px;
-  width: 100%;
+    font-size: 16px;
+    width: 100%;
 }
 
 .login-btn,
 .signup-btn {
-  background-color: var(--secondary-color);
-  color: white;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 #rater {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 #current-reviews {
-  padding-bottom: 7px;
+    padding-bottom: 7px;
 }
 
 .btn-salmon {
-  background-color: var(--secondary-color);
-  color: white;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 .commentTxt {
-  font-family: "Roboto", sans-serif;
-  padding-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 15px;
 }
