@@ -3,6 +3,10 @@ const commentFormHandler = async (event) => {
 
   const comment_text = document.querySelector("#comment-text").value.trim();
 
+  if(!comment_text){
+    return; 
+  }
+
   const review_id = window.location.toString().split("/")[
     window.location.toString().split("/").length - 1
   ];
