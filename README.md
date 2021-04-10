@@ -1,5 +1,5 @@
 # Mouldy Potatoes
-Mouldy Potates is a CMS-style review site similar to Wordpress site, where users can publish their review of any movie and comment on other users’ reviews as well.
+Mouldy Potates is a CMS-style review site similar to Wordpress, where users can publish their review of any movie and comment on other users’ reviews as well.
 
 # Link to deployed app
 [Mouldy Potatoes](https://mouldy-potatoes.herokuapp.com/)
@@ -38,6 +38,7 @@ Run `npm init -y` to initialise the `package.json ` and then install the followi
 * `npm i sequelize`
 * `npm i express-session`
 * `npm i connect-session-sequelize`
+* `npm i express-handlebars`
 * `npm i rater-js`
 * `npm i browserify`
 * `npm i masonry`
